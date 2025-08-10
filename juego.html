@@ -7,12 +7,53 @@
     <title>Piedra , papel, tijeras</title>
 
     <script>
-        // 1 es piefra , 2 es papel , 3 es tijera
+        // 1 es piedra , 2 es papel , 3 es tijera
         let jugador = 0
-        let pc = 2
-        jugador = prompt(" elige , 1 para piedra , 2 para papel , 3 para tijera")
+        let pc = 3
+        jugador = prompt(" Elige : 1 para piedra 🪨 , 2 para Papel 📄, 3 para Tijera✂️")
         alert
             ("Elegiste" + jugador)
+        if (jugador == 1) {
+            alert
+                ("Elegiste Piedra 🪨")
+        } else
+        if (jugador == 2) {
+            alert
+                ("Elegiste Papel📄")
+
+        } else
+        if (jugador == 3) {
+            alert("Elegiste Tijera✂️")
+        } else {
+            alert
+                ("Elegiste perder😭")
+        }
+        if (pc == 1) {
+            1
+            alert
+                "PC elige Piedra 🪨"
+        } else
+        if (pc == 2) {
+            alert
+                ("PC elige Papel📄")
+
+        } else
+        if (pc == 3) {
+            alert("PC elige Tijera✂️")
+        }
+        //COMBATE
+        if (pc == jugador) {
+            alert
+                ("Empate")
+        } else if (jugador == 1 && pc == 3) {
+            alert
+                ("Jugador Gana")
+        } else if (jugador == 2 && pc == 1) {
+            alert("Jugador Gana")
+        } // Pierdo
+        else {
+            alert("PERDISTE 😭")
+        }
     </script>
 
 
